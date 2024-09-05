@@ -1,0 +1,623 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1207,9367" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1217,9302" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="NameProducto" />
+      <Variable x:TypeArguments="x:String" Name="Datos" />
+      <Variable x:TypeArguments="x:String" Name="Cantidad" />
+      <Variable x:TypeArguments="x:String" Name="cufe" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DatosExcel" />
+      <Variable x:TypeArguments="x:String" Name="Consecutivo" />
+      <Variable x:TypeArguments="x:String" Name="Prefijo" />
+      <Variable x:TypeArguments="x:String" Name="Fecha" />
+      <Variable x:TypeArguments="x:Int32" Name="Contador">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:RepeatNumberOfTimesX DisplayName="Repetir número de veces" sap:VirtualizedContainerService.HintSize="1155,9214" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="5" StartAt="1">
+      <ui:RepeatNumberOfTimesX.Body>
+        <ActivityAction x:TypeArguments="x:Int32">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="1121,9027" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="1059,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[Contador]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[Contador+1]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ueab:SequenceX DisplayName="Ámbito del proceso de Excel único" sap:VirtualizedContainerService.HintSize="1059,8825" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Utilice el archivo de Excel" sap:VirtualizedContainerService.HintSize="997,8714" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Compras.xlsx">
+                <ueab:ExcelApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="963,8422" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;Hoja1&quot;).Cell(&quot;A&quot;+Contador.ToString)]" DisplayName="Leer el valor de la celda" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="901,191" sap2010:WorkflowViewState.IdRef="ReadCellValueX_2">
+                        <ueab:ReadCellValueX.SaveTo>
+                          <OutArgument x:TypeArguments="x:String">[cufe]</OutArgument>
+                        </ueab:ReadCellValueX.SaveTo>
+                      </ueab:ReadCellValueX>
+                      <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;Hoja1&quot;).Cell(&quot;B&quot;+Contador.ToString)]" DisplayName="Leer el valor de la celda" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="901,191" sap2010:WorkflowViewState.IdRef="ReadCellValueX_3">
+                        <ueab:ReadCellValueX.SaveTo>
+                          <OutArgument x:TypeArguments="x:String">[Consecutivo]</OutArgument>
+                        </ueab:ReadCellValueX.SaveTo>
+                      </ueab:ReadCellValueX>
+                      <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;Hoja1&quot;).Cell(&quot;C&quot;+Contador.ToString)]" DisplayName="Leer el valor de la celda" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="901,191" sap2010:WorkflowViewState.IdRef="ReadCellValueX_4">
+                        <ueab:ReadCellValueX.SaveTo>
+                          <OutArgument x:TypeArguments="x:String">[Prefijo]</OutArgument>
+                        </ueab:ReadCellValueX.SaveTo>
+                      </ueab:ReadCellValueX>
+                      <ueab:ReadCellValueX Cell="[Excel.Sheet(&quot;Hoja1&quot;).Cell(&quot;D&quot;+Contador.ToString)]" DisplayName="Leer el valor de la celda" GetFormattedText="True" sap:VirtualizedContainerService.HintSize="901,191" sap2010:WorkflowViewState.IdRef="ReadCellValueX_5">
+                        <ueab:ReadCellValueX.SaveTo>
+                          <OutArgument x:TypeArguments="x:String">[Fecha]</OutArgument>
+                        </ueab:ReadCellValueX.SaveTo>
+                      </ueab:ReadCellValueX>
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Navegador Chrome: DIAN | Acceder" sap:VirtualizedContainerService.HintSize="901,7570" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="1ac3118a-ace7-4991-9ace-f92637086b4c" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="867,7330" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'CUFE o UUID'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="805,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1ac3118a-ace7-4991-9ace-f92637086b4c" Text="[cufe]" Version="V3">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://catalogo-vpfe.dian.gov.co/User/SearchDocument" CVScreenId="66030dca-0cfd-47ff-b35a-8dbbace7e91c" CvElementArea="812, 557, 452, 43" CvType="InputBox" DesignTimeRectangle="814, 559, 449, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='DocumentKey' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='DocumentKey' tag='INPUT' type='text' class='form-control' placeholder='Ingrese el código CUFE o UUID' aaname='CUFE o UUID' /&gt;" Guid="5bce3e66-84a0-4dc2-8322-c3f7ae6ba6b3" InformativeScreenshot="d50ff8dd458659d112909c20083a7914.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DIAN | Acceder' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CVScreenId="66030dca-0cfd-47ff-b35a-8dbbace7e91c" CvTextArea="812, 534, 83, 13" CvTextArgument="CUFE O UUID" CvType="Text" DesignTimeRectangle="814, 531, 81, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='control-label' aaname='CUFE o UUID' check:innerText='CUFE o UUID' /&gt;" Guid="3532a8b2-1eb2-4cb7-9492-b246a7301441" SearchSteps="FuzzySelector, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NTypeInto.Target>
+                                <uix:NTypeInto.VerifyOptions>
+                                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  </uix:VerifyExecutionTypeIntoOptions>
+                                </uix:NTypeInto.VerifyOptions>
+                              </uix:NTypeInto>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Buscar'" sap:VirtualizedContainerService.HintSize="805,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ac3118a-ace7-4991-9ace-f92637086b4c" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://catalogo-vpfe.dian.gov.co/User/SearchDocument" CVScreenId="66030dca-0cfd-47ff-b35a-8dbbace7e91c" CvElementArea="812, 612, 113, 50" CvTextArea="837, 629, 63, 15" CvTextArgument="Buscar" CvType="Button" DesignTimeRectangle="814, 614, 109, 46" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='btn btn-primary search-document margin-top-40' aaname='             Buscar         ' check:innerText='Buscar' /&gt;" Guid="0555b439-08df-4bb6-956c-3677436f52ec" InformativeScreenshot="f8562888ce2c5d7536146ec599a8e9a6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DIAN | Acceder' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Descargar PDF'" sap:VirtualizedContainerService.HintSize="805,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ac3118a-ace7-4991-9ace-f92637086b4c" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://catalogo-vpfe.dian.gov.co/Document/ShowDocumentToPublic/b89d53433ba3d2d1beb36a3a5ccdab95bf8f18801059dd02b79e46a74a917879799151c5acee42369a59f11967407b7b?Token=727e04c5487c4f86a7e689ea1295d64df1a610863fad70d3036d45acec6417ee" CVScreenId="abbe5c3a-014f-49d9-8acb-11dc134edaa0" CvTextArea="1744, 386, 105, 17" CvTextArgument="Descargar PDF" CvType="Text" DesignTimeRectangle="1727, 385, 121, 17" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='html-gdoc' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='html-gdoc' tag='A' type='' class='downloadPDFUrl' aaname='                                  Descargar PDF                             ' check:innerText='Descargar PDF' /&gt;" Guid="0ddcd0c2-ae34-490d-ac22-6bf59cf29d6d" InformativeScreenshot="0bb610c166bbc1d107eebc393d045ba1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='DIAN | Detalles del documento' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                              <Delay DisplayName="Retraso" Duration="00:00:05" sap:VirtualizedContainerService.HintSize="805,122" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                              <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="805,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[cufe]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[cufe+".pdf"]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="805,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[cufe]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">["C:\Users\User\Downloads\"+cufe]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:CommentOut DisplayName="Comentar" sap:VirtualizedContainerService.HintSize="805,6154" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                                <ui:CommentOut.Body>
+                                  <Sequence DisplayName="Actividades ignoradas" sap:VirtualizedContainerService.HintSize="769,6052" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Aplicación: b89d53433ba3d2d1beb36a3a5ccdab95bf8f18801059dd02b79e46a74a917879799151c5acee423" sap:VirtualizedContainerService.HintSize="707,5964" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="e3b8ac46-2984-438e-8dd5-80404a9e75a5" Version="V2">
+                                      <uix:NApplicationCard.Body>
+                                        <ActivityAction x:TypeArguments="x:Object">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                          </ActivityAction.Argument>
+                                          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="610,5650" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NGetText DisplayName="Obtener texto 'RETA L'" sap:VirtualizedContainerService.HintSize="548,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="e3b8ac46-2984-438e-8dd5-80404a9e75a5" TextString="[NameProducto]" Version="V3">
+                                              <uix:NGetText.Target>
+                                                <uix:TargetAnchorable DesignTimeRectangle="490, 876, 98, 27" DesignTimeScaleFactor="1" ElementType="Cell" FullSelectorArgument="&lt;wnd aaname='Panel de documentos' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl idx='3' role='row' /&gt;&lt;ctrl idx='3' role='cell' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Panel de documentos' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='row' /&gt;&lt;ctrl automationid='' role='cell' /&gt;" Guid="db68ab0e-e91b-435d-92bb-237f0289a5fb" InformativeScreenshot="3460c5aa0ef555cd60fe836b88c79b38.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='b89d53433ba3d2d1beb36a3a5ccdab95bf8f18801059dd02b79e46a74a917879*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                              </uix:NGetText.Target>
+                                            </uix:NGetText>
+                                            <uix:NGetText DisplayName="Obtener texto '1 255'" sap:VirtualizedContainerService.HintSize="548,189" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="e3b8ac46-2984-438e-8dd5-80404a9e75a5" TextString="[Datos]" Version="V3">
+                                              <uix:NGetText.Target>
+                                                <uix:TargetAnchorable DesignTimeRectangle="419, 732, 469, 27" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;wnd aaname='Panel de documentos' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl idx='3' role='row' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Panel de documentos' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl automationid='' role='row' /&gt;" Guid="eae1f33d-6977-4130-a9bf-d050f2722771" InformativeScreenshot="b2dcfc9fba7ee46ddea2dbb12a7c0d33.png" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='b89d53433ba3d2d1beb36a3a5ccdab95bf8f18801059dd02b79e46a74a917879*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" />
+                                              </uix:NGetText.Target>
+                                            </uix:NGetText>
+                                            <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="548,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[Cantidad]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[Datos.Substring(65,7)]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="548,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[Cantidad]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[String.Join("", System.Text.RegularExpressions.Regex.Matches(Cantidad, "[0-9]"))]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <ui:CommentOut DisplayName="Comentar" sap:VirtualizedContainerService.HintSize="548,4954" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                                              <ui:CommentOut.Body>
+                                                <Sequence DisplayName="Actividades ignoradas" sap:VirtualizedContainerService.HintSize="512,4850" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Navegador Chrome: Siigo Nube" sap:VirtualizedContainerService.HintSize="450,4762" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="d722f92f-8bfa-4cc8-a168-dd230c176b41" Version="V2">
+                                                    <uix:NApplicationCard.Body>
+                                                      <ActivityAction x:TypeArguments="x:Object">
+                                                        <ActivityAction.Argument>
+                                                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                                        </ActivityAction.Argument>
+                                                        <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,4522" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Inicio'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Version="V3">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/dashboard/1055" DesignTimeRectangle="23, 211, 66, 46" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='SIIGO-MENU-MOLECULE' /&gt;&lt;webctrl css-selector='div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;siigo-menu-button&amp;gt;div&amp;gt;div' shadowhostid='' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SIIGO-MENU-MOLECULE' /&gt;&lt;webctrl type='' shadowhostid='' tag='DIV' class='siigo-menu-button--button principal selected no-border false' aaname='' check:text='Inicio' /&gt;" Guid="b8be45e6-2f47-42c7-9806-13e194b5e67d" InformativeScreenshot="afb162efc4cdbfba4a7a4d539c124068.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                                                            </uix:NClick.Target>
+                                                            <uix:NClick.VerifyOptions>
+                                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                <uix:VerifyExecutionOptions.Retry>
+                                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                                </uix:VerifyExecutionOptions.Retry>
+                                                                <uix:VerifyExecutionOptions.Timeout>
+                                                                  <InArgument x:TypeArguments="x:Double" />
+                                                                </uix:VerifyExecutionOptions.Timeout>
+                                                              </uix:VerifyExecutionOptions>
+                                                            </uix:NClick.VerifyOptions>
+                                                          </uix:NClick>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'I'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Version="V3">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/dashboard/1055" DesignTimeRectangle="46, 222, 20, 18" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='SIIGO-MENU-MOLECULE' /&gt;&lt;webctrl shadowhostid='' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SIIGO-MENU-MOLECULE' /&gt;&lt;webctrl shadowhostid='' tag='I' type='' class='fas fa-home-lg-alt' aaname='' /&gt;" Guid="d39275f0-8d46-4955-847d-8fa72e0108d2" InformativeScreenshot="20126f4cde4ac4ab4931f991916892df.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                                                            </uix:NClick.Target>
+                                                            <uix:NClick.VerifyOptions>
+                                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                <uix:VerifyExecutionOptions.Retry>
+                                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                                </uix:VerifyExecutionOptions.Retry>
+                                                                <uix:VerifyExecutionOptions.Timeout>
+                                                                  <InArgument x:TypeArguments="x:Double" />
+                                                                </uix:VerifyExecutionOptions.Timeout>
+                                                              </uix:VerifyExecutionOptions>
+                                                            </uix:NClick.VerifyOptions>
+                                                          </uix:NClick>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Registra una'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Version="V3">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/dashboard/1055" CVScreenId="80754358-2208-4a5c-9c6b-0d9a1a7aa82d" CvTextArea="1088, 508, 191, 16" CvTextArgument="Registra una Compra O Gasto" CvType="Text" DesignTimeRectangle="1049, 432, 269, 124" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='shortcut-container' idx='4' parentid='single-spa-application:react-dashboard' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='shortcut-container' type='' parentid='single-spa-application:react-dashboard' tag='DIV' aaname='' check:innerText='Registra una Compra o Gasto' /&gt;" Guid="164f30a0-393a-452d-921c-2be0403ad5c5" InformativeScreenshot="9d10053bb5d8874557793d561d85927e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                            </uix:NClick.Target>
+                                                            <uix:NClick.VerifyOptions>
+                                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                <uix:VerifyExecutionOptions.Retry>
+                                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                                </uix:VerifyExecutionOptions.Retry>
+                                                                <uix:VerifyExecutionOptions.Timeout>
+                                                                  <InArgument x:TypeArguments="x:Double" />
+                                                                </uix:VerifyExecutionOptions.Timeout>
+                                                              </uix:VerifyExecutionOptions>
+                                                            </uix:NClick.VerifyOptions>
+                                                          </uix:NClick>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'SPAN'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Version="V3">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" CVScreenId="cd78135a-7ec5-45fe-bd6a-efa5cdc50df1" CvTextArea="691, 431, 12, 11" CvTextArgument="X" CvType="Text" DesignTimeRectangle="681, 421, 34, 34" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;purchase-root&amp;gt;div&amp;gt;div&amp;gt;purchase&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;purchase-header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;siigo-datepicker&amp;gt;div&amp;gt;div&amp;gt;dx-date-box&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;span' isleaf='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='SPAN' class='dx-icon dx-icon-clear' aaname='' /&gt;" Guid="89f2f836-08f3-4688-8557-b13859c3763e" InformativeScreenshot="cbca85acdf0e19b47a7d2a7f179670d4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                            </uix:NClick.Target>
+                                                            <uix:NClick.VerifyOptions>
+                                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                <uix:VerifyExecutionOptions.Retry>
+                                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                                </uix:VerifyExecutionOptions.Retry>
+                                                                <uix:VerifyExecutionOptions.Timeout>
+                                                                  <InArgument x:TypeArguments="x:Double" />
+                                                                </uix:VerifyExecutionOptions.Timeout>
+                                                              </uix:VerifyExecutionOptions>
+                                                            </uix:NClick.VerifyOptions>
+                                                          </uix:NClick>
+                                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Fecha de elaboración'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Text="[Fecha]" Version="V3">
+                                                            <uix:NTypeInto.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" CVScreenId="5e5ac8d4-d4a7-4edc-ac0b-bedb9720fd3c" CvElementArea="567, 424, 180, 28" CvType="InputBox" DesignTimeRectangle="567, 426, 114, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-role='combobox' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='INPUT' type='text' class='generic-control-validator dx-texteditor-input' aaname='' /&gt;" Guid="8e955ee2-156f-48ed-9b6b-9e246b9ee664" InformativeScreenshot="2ad0d0a062f6eee627c1d6e83a42c38e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                    <uix:Target DesignTimeRectangle="461, 425, 90, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Fecha de elaboración' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Fecha de elaboración' tag='SPAN' type='' class='col-sm-2 col-form-label span-form-headers' check:innerText='Fecha de elaboración' /&gt;" Guid="795eab18-b7a8-4d6b-84b3-ce4c6135c713" SearchSteps="FuzzySelector" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NTypeInto.Target>
+                                                          </uix:NTypeInto>
+                                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Proveedores'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Text="alex" Version="V3">
+                                                            <uix:NTypeInto.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" CVScreenId="a2e397d5-655c-4862-99df-fae58de6c2db" CvTextArea="570, 476, 40, 12" CvTextArgument="Buscar" CvType="Text" DesignTimeRectangle="566, 470, 285, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='autocomplete_autocompleteInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='autocomplete_autocompleteInput' tag='INPUT' type='text' class='form-control generic-control-validator read-only-bg' placeholder='Buscar' aaname='' /&gt;" Guid="b6266734-c931-4314-9065-85747050c2e9" InformativeScreenshot="93e18fa4d4c4bf42a500a00a5a6af925.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                    <uix:Target CVScreenId="a2e397d5-655c-4862-99df-fae58de6c2db" CvTextArea="460, 471, 73, 13" CvTextArgument="Proveedores" CvType="Text" DesignTimeRectangle="461, 470, 90, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Proveedores' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Proveedores' tag='SPAN' type='' class='col-sm-2 col-form-label span-form-headers' check:innerText='Proveedores' /&gt;" Guid="657c3631-d974-4895-b830-be2f07835e79" SearchSteps="FuzzySelector, CV" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NTypeInto.Target>
+                                                          </uix:NTypeInto>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="[TimeSpan.FromSeconds(1).TotalHours]" DisplayName="Clic 'JOSE ALEXANDER'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Version="V3">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" CVScreenId="a2e397d5-655c-4862-99df-fae58de6c2db" CvTextArea="573, 517, 173, 13" CvTextArgument="CML PLASTICOS SAS S.A.S." CvType="Text" DesignTimeRectangle="574, 516, 248, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='ng-star-inserted' aaname=' JOSE ALEXANDER VARGAS CARDENAS ' check:innerText='JOSE ALEXANDER VARGAS CARDENAS' /&gt;" Guid="7b074794-f0c6-4836-8e93-9ce4b06385ee" InformativeScreenshot="ba3ed7090d0696958f3eac08f9c0237c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                            </uix:NClick.Target>
+                                                            <uix:NClick.VerifyOptions>
+                                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                <uix:VerifyExecutionOptions.Retry>
+                                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                                </uix:VerifyExecutionOptions.Retry>
+                                                                <uix:VerifyExecutionOptions.Timeout>
+                                                                  <InArgument x:TypeArguments="x:Double" />
+                                                                </uix:VerifyExecutionOptions.Timeout>
+                                                              </uix:VerifyExecutionOptions>
+                                                            </uix:NClick.VerifyOptions>
+                                                            <sap:WorkflowViewStateService.ViewState>
+                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                              </scg:Dictionary>
+                                                            </sap:WorkflowViewStateService.ViewState>
+                                                          </uix:NClick>
+                                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'No. factura'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Text="[Prefijo]" Version="V3">
+                                                            <uix:NTypeInto.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" CVScreenId="37e0c93b-c8b0-4298-9683-3e98cbd4b8a1" CvElementArea="1134, 423, 131, 29" CvType="InputBox" DesignTimeRectangle="1136, 425, 127, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='txtExternalPrefix' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txtExternalPrefix' tag='INPUT' type='text' class='form-control ng-untouched ng-pristine ng-valid' placeholder='Prefijo' aaname='' /&gt;" Guid="28bde338-b3a0-44a7-9067-5dd24e290dbf" InformativeScreenshot="266a6ff9697ea655e4ee3cb13eccfb1f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                    <uix:Target DesignTimeRectangle="1031, 425, 90, 37" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;purchase-root&amp;gt;div&amp;gt;div&amp;gt;purchase&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;purchase-header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='4' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='col-sm-2 col-form-label span-form-headers' tag='SPAN' aaname='No. factura proveedor ' check:innerText='No. factura proveedor' /&gt;" Guid="a37347ac-2c74-4e1f-817d-d51bee0b890f" SearchSteps="FuzzySelector" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NTypeInto.Target>
+                                                          </uix:NTypeInto>
+                                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'INPUT txtExternalConsec…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Text="[Consecutivo]" Version="V3">
+                                                            <uix:NTypeInto.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" CVScreenId="37e0c93b-c8b0-4298-9683-3e98cbd4b8a1" CvElementArea="1291, 424, 131, 28" CvType="InputBox" DesignTimeRectangle="1293, 425, 128, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='txtExternalConsecutive' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txtExternalConsecutive' tag='INPUT' type='text' class='form-control ng-untouched ng-pristine ng-invalid' placeholder='Consecutivo' aaname='' /&gt;" Guid="64871467-5b66-41b3-a013-6204388b01e4" InformativeScreenshot="a09a65a4b07580a49a157e5c09b61a89.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                            </uix:NTypeInto.Target>
+                                                          </uix:NTypeInto>
+                                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Producto'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Text="retal" Version="V3">
+                                                            <uix:NTypeInto.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" CVScreenId="37e0c93b-c8b0-4298-9683-3e98cbd4b8a1" CvTextArea="563, 779, 41, 13" CvTextArgument="Buscar" CvType="Text" DesignTimeRectangle="559, 774, 79, 26" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;purchase-root&amp;gt;div&amp;gt;div&amp;gt;purchase&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;purchase-grid&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;siigo-autocomplete&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' id='autocomplete_autocompleteInput' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' id='autocomplete_autocompleteInput' tag='INPUT' class='form-control generic-control-validator read-only-bg' placeholder='Buscar' aaname='' /&gt;" Guid="62bda747-fc20-4319-892d-170fa35ba511" InformativeScreenshot="060e366f28113750f8bf2a324fa84289.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                    <uix:Target CVScreenId="37e0c93b-c8b0-4298-9683-3e98cbd4b8a1" CvTextArea="554, 734, 52, 11" CvTextArgument="Producto" CvType="Text" DesignTimeRectangle="555, 732, 82, 35" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' Producto ' parentid='grid-header' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Producto ' parentid='grid-header' tag='DIV' type='' class='header-grid th-grid-erpdoc' check:innerText='Producto' /&gt;" Guid="33696493-730c-427a-b7bf-c054c7691055" SearchSteps="FuzzySelector, CV" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NTypeInto.Target>
+                                                          </uix:NTypeInto>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Retal plastico'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Version="V3">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" DesignTimeRectangle="624, 825, 78, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname=' Retal plastico ' tableRow='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname=' Retal plastico ' type='' tag='DIV' class='ng-star-inserted' check:innerText='Retal plastico' /&gt;" Guid="859ac3a0-2b09-4dfa-bd5e-78fa3144cbdb" InformativeScreenshot="5083e6a87726d0087ad192c620421d88.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                                                            </uix:NClick.Target>
+                                                            <uix:NClick.VerifyOptions>
+                                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                <uix:VerifyExecutionOptions.Retry>
+                                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                                </uix:VerifyExecutionOptions.Retry>
+                                                                <uix:VerifyExecutionOptions.Timeout>
+                                                                  <InArgument x:TypeArguments="x:Double" />
+                                                                </uix:VerifyExecutionOptions.Timeout>
+                                                              </uix:VerifyExecutionOptions>
+                                                            </uix:NClick.VerifyOptions>
+                                                          </uix:NClick>
+                                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en '956'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Text="RETAL TRANSPARENTE&#xA;SIN PROCESO" Version="V3">
+                                                            <uix:NTypeInto.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" CVScreenId="5754fb04-6cd2-48d5-9f8b-9787514488ea" CvElementArea="639, 801, 164, 30" CvType="InputBox" DesignTimeRectangle="640, 802, 162, 29" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='editstrLongDescription' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='editstrLongDescription' tag='TEXTAREA' type='' class='form-control' aaname='' /&gt;" Guid="a050764d-917a-4ca8-9cfb-662096ba4341" InformativeScreenshot="103dc5e86c8540f672121b7b3e1806ce.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                                                <uix:TargetAnchorable.Anchors>
+                                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                                    <uix:Target CVScreenId="5754fb04-6cd2-48d5-9f8b-9787514488ea" CvTextArea="559, 805, 25, 13" CvTextArgument="956" CvType="Text" DesignTimeRectangle="560, 804, 24, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='956' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='956' tag='A' type='' class='' check:innerText='956' /&gt;" Guid="94830099-d8bf-43b8-9a4f-5e53ddb05030" SearchSteps="FuzzySelector, CV" />
+                                                                  </scg:List>
+                                                                </uix:TargetAnchorable.Anchors>
+                                                              </uix:TargetAnchorable>
+                                                            </uix:NTypeInto.Target>
+                                                          </uix:NTypeInto>
+                                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en '1.00'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Text="[Cantidad]" Version="V3">
+                                                            <uix:NTypeInto.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" CVScreenId="37e0c93b-c8b0-4298-9683-3e98cbd4b8a1" CvTextArea="849, 781, 27, 13" CvTextArgument="1.00" CvType="Text" DesignTimeRectangle="804, 775, 77, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='inputDecimal_siigoInputDecimal' parentid='editQuantity' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputDecimal_siigoInputDecimal' parentid='editQuantity' tag='INPUT' type='text' class='generic-control-validator input-right dx-texteditor-input' aaname='' /&gt;" Guid="5f888824-3c87-4a15-9e1a-b8700e88d568" InformativeScreenshot="c621a6084120cb3f352b68efae877669.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                            </uix:NTypeInto.Target>
+                                                          </uix:NTypeInto>
+                                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en '0.00'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Text="900" Version="V3">
+                                                            <uix:NTypeInto.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" CVScreenId="37e0c93b-c8b0-4298-9683-3e98cbd4b8a1" CvTextArea="930, 781, 27, 13" CvTextArgument="0.00" CvType="Text" DesignTimeRectangle="885, 775, 78, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='inputDecimal_siigoInputDecimal' parentid='editUnitValue' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputDecimal_siigoInputDecimal' parentid='editUnitValue' tag='INPUT' type='text' class='generic-control-validator input-right dx-texteditor-input' aaname='' /&gt;" Guid="20f46f0d-c8ff-4eed-9e9b-53186554807b" InformativeScreenshot="0fd8a133684faf26c672be596e9e6575.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                            </uix:NTypeInto.Target>
+                                                          </uix:NTypeInto>
+                                                          <uix:NSelectItem DisplayName="Seleccionar elemento 'SELECT dropdown_dropdow…'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="IVA 19%" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Version="V3">
+                                                            <uix:NSelectItem.Items>
+                                                              <scg:List x:TypeArguments="x:String" Capacity="5">
+                                                                <x:String></x:String>
+                                                                <x:String>IVA 19%</x:String>
+                                                                <x:String>IVA 5%</x:String>
+                                                                <x:String>IVA 0%</x:String>
+                                                                <x:String>Impoconsumo 8%</x:String>
+                                                              </scg:List>
+                                                            </uix:NSelectItem.Items>
+                                                            <uix:NSelectItem.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" CVScreenId="37e0c93b-c8b0-4298-9683-3e98cbd4b8a1" CvElementArea="1127, 773, 83, 28" CvType="InputBox" DesignTimeRectangle="1128, 774, 81, 26" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='dropdown_dropdownSelect' parentid='editAddTax' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='dropdown_dropdownSelect' parentid='editAddTax' tag='SELECT' type='' class='form-control generic-control-validator' aaname='' /&gt;" Guid="280eda7b-4f89-42d3-ae59-8a8911aebc0a" InformativeScreenshot="d37e6bf7d71ef9d0bd041c3ef9d33d3c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                            </uix:NSelectItem.Target>
+                                                          </uix:NSelectItem>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'I'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Version="V3">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" DesignTimeRectangle="649, 950, 9, 13" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentname='editingAcAccount' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='editingAcAccount' tag='I' type='' class='siigo-autocomplete-icons fa fa-caret-down ng-star-inserted' aaname='' /&gt;" Guid="0e971400-a806-491d-8c3a-bb3ea86efb92" InformativeScreenshot="24bd8ba09a8e11edb100a7a6d029868c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                                                            </uix:NClick.Target>
+                                                            <uix:NClick.VerifyOptions>
+                                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                <uix:VerifyExecutionOptions.Retry>
+                                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                                </uix:VerifyExecutionOptions.Retry>
+                                                                <uix:VerifyExecutionOptions.Timeout>
+                                                                  <InArgument x:TypeArguments="x:Double" />
+                                                                </uix:VerifyExecutionOptions.Timeout>
+                                                              </uix:VerifyExecutionOptions>
+                                                            </uix:NClick.VerifyOptions>
+                                                          </uix:NClick>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Crédito proveedores'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Version="V3">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" DesignTimeRectangle="476, 622, 155, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='ng-star-inserted' aaname=' Crédito proveedores ' check:innerText='Crédito proveedores' /&gt;" Guid="e62e6cbe-6507-4edf-b54d-2841aeb3da75" InformativeScreenshot="53a3d6f5f6084bd0c83c75a08bdc0411.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                                                            </uix:NClick.Target>
+                                                            <uix:NClick.VerifyOptions>
+                                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                <uix:VerifyExecutionOptions.Retry>
+                                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                                </uix:VerifyExecutionOptions.Retry>
+                                                                <uix:VerifyExecutionOptions.Timeout>
+                                                                  <InArgument x:TypeArguments="x:Double" />
+                                                                </uix:VerifyExecutionOptions.Timeout>
+                                                              </uix:VerifyExecutionOptions>
+                                                            </uix:NClick.VerifyOptions>
+                                                          </uix:NClick>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic '+Agregar otra'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Version="V3">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" DesignTimeRectangle="462, 603, 609, 62" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='trShowNewRowPay' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='trShowNewRowPay' tag='DIV' type='' class='add-grid item-row' aaname='' check:innerText='+Agregar otra forma de pago' /&gt;" Guid="39d1d88f-3567-4e4e-849d-7049901a9f2b" InformativeScreenshot="563ec0315e9150d5a173e4bdb038be49.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                                                            </uix:NClick.Target>
+                                                            <uix:NClick.VerifyOptions>
+                                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                <uix:VerifyExecutionOptions.Retry>
+                                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                                </uix:VerifyExecutionOptions.Retry>
+                                                                <uix:VerifyExecutionOptions.Timeout>
+                                                                  <InArgument x:TypeArguments="x:Double" />
+                                                                </uix:VerifyExecutionOptions.Timeout>
+                                                              </uix:VerifyExecutionOptions>
+                                                            </uix:NClick.VerifyOptions>
+                                                          </uix:NClick>
+                                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Guardar'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Version="V3">
+                                                            <uix:NClick.Target>
+                                                              <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" CVScreenId="37e0c93b-c8b0-4298-9683-3e98cbd4b8a1" CvElementArea="1009, 976, 71, 39" CvTextArea="1018, 988, 53, 13" CvTextArgument="Guardar" CvType="Button" DesignTimeRectangle="1011, 977, 67, 36" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='heightButton SiigoButton SiigoButtonPrimary' aaname=' Guardar ' check:innerText='Guardar' /&gt;" Guid="a23308f1-aeb0-4980-9fc1-acd61d207dda" InformativeScreenshot="55a3976409144c1081110051220ed5a9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                                            </uix:NClick.Target>
+                                                            <uix:NClick.VerifyOptions>
+                                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                                <uix:VerifyExecutionOptions.Retry>
+                                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                                </uix:VerifyExecutionOptions.Retry>
+                                                                <uix:VerifyExecutionOptions.Timeout>
+                                                                  <InArgument x:TypeArguments="x:Double" />
+                                                                </uix:VerifyExecutionOptions.Timeout>
+                                                              </uix:VerifyExecutionOptions>
+                                                            </uix:NClick.VerifyOptions>
+                                                          </uix:NClick>
+                                                        </Sequence>
+                                                      </ActivityAction>
+                                                    </uix:NApplicationCard.Body>
+                                                    <uix:NApplicationCard.TargetApp>
+                                                      <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAXsSURBVHhe5Vs7jhw3EN0j+Ag6gkOFewRdQICO4FyJbqBI8V5gAcGJEwdrOHDiQI6kQIGUKFKgxJGTdr1iFZdT88hudnNmezAPeNgdsvmpV8Uiu6fn5my4n26FvwjfCB8afC/ENa+EP1vrC8T99EwIg2HUtIE/hBAFgvxkve8YaaJbjW4RYryw0XaEFLZfhGzSpyDGemWjPyHgjfMaHvlBeGuzOSPSGj9lqPfyrfBMOSJ5HcmJTeQpiUg88c6R1jobfC+EY06UG+6nu2KgvXOwCJdlvPPOZr8Rl2m8c2MkbFnzvwr/mqbnH6fp/vsj331LZajTa1jbsVwpQsr2rMM2f5um11+n6ft/yeBs7B+PRBmEAPBXy1lfY4jE2Lk7pH2+b6sTb7rhavQS75pYwMvPpH4ccWDqOCf0HnJ+n6ZP/yaPwyh6TYt/J+H+/CH/n25ZvDXrZoA1wzvgFOMxeXiS1i+lLANAlwSrH8OZYzPCpCf0xVvwmnqO1XcSSwdARLD6AXwwSyvozPqYMLy/KuwZRVD0h+VE68ewcju9wvs54bH6lUQy1Cj4J/Wt/SMisFOMyQ8fzOKApWsfW5r9Ve+PTlqSU5BP3HgnyhAZutxEnI3jklyQtorDC8VI39pyWEoZJoFyunUxT+HzqL3eBNoYfeGYjINCeYGEHAyO8OTkdQdGWUQ4ciKTvw6NGI+grRQhcgJeFw3FuSA9UNCO0GENOhiuM6OsI2VpvAPJMWJ0gkM06LzgDJmXLxkVuh11xREZ4T9jvMNDXA89RYcMmAhD2W4EcXaAsBDDBQAxRzimcty2ZZCyfz6bzwGDaAch7DBYCQ13KY+REYU7C8V4jKtjP877iwtwy0KVIYdaHACUNeki6HXy2cs9stQTXv4UNCGyCCbAm1qoAtpgSeKCYRDHWQhAyyNxmCrXMJIoJgqW7UHWHpQ6b699YN4hUjG+2oT/TYA791xEz7k89uGD1MozxfDa+ACrO2gvBsJYloQdumzL0ypEhMAmwENtAk21A2uG1sqV4o3WxBkOdhExfkniBjQnFdGnETInQE54C9gtgHik13ggt+8w3qEieCRADBNADa2hmfgK9goQywEdC6Ep4/k9QYS3hwcjNDqsPf76ga2Et1e6ALh4Dnly3jhwqaFaLl6I0P5jwhJDIrzfGD3q3dhePjMRchRkAYTsQoassg9i7BJAbmYialEWw1zbE2GqziHO1Zsp1JkA6RZYtowe6A5RKN4jQAxv9Z71ExmXJ9qz8D/yfsGIfBNnAjw+/xO1ehJTmSR7BKhdyxiNxbVUANLWGaM7j3ckACjro5UUIzx0a0ax8lim67+cQ8EYLWjbK0B0qs/NBeDf/CCkJCLiGozwzqJRrXKW4WshzNpTATyxRZKEi/ZaZwLMPweU/NBaGpg8myja0nKSmPKkSkq/1HskCdL2QiqWH+1NALzBddTwiI1TGybUJQAxDMjZGRTPsejzfmn74qSnJHPG5xxtJoDeDi8hUxPoFqDRF9DakufaI3+hrpbHUGf22O0wwJ4HEtZOZ2sEAOfyC0PZPvY9h5Bsi+eC/kisxdYSkLqaobVypYTi0gcxjrXt47lFePBI7PChaEkxrhWuuqbkulUCOCWCELKoc+oZg0QWvUVv7FZ6vfRz1ObgoSjgy0CSDwateTsin6rWsLZ1OVtbGCM8DGOd7JpE8vaIfzFCBq3hIKOuILys65JNtrILHGX6daRfjOSvxpYkJzV+42TKKMP/5RJgQDnrp5OVr8YAOxTVsr1DvbbVE503XyMENzbeNfYoqEwOk2iuwR52CKC34GOMn/l6HEAukHWNQT0sNdH58XEkZZ2j79qS05CXDE/bruPC94rjHeI5OcbTjAtfkQHWvCS1b3a+JAWsfU1uf4QjV75EveVFyf1w89uiV/yqrOMyRRj0srTjskQY5PmI/ecEJLwTGe+46p/MONKR+Up/NFUiRcMV/mwuIuWGcwqBsU681tcAkzrt0tjpT2cjrvbH0zWkL1929vP5m5v/AU1NBM7vsO/nAAAAAElFTkSuQmCC" InformativeScreenshot="4e30d510e939546477e8497d5dd4a810.jpg" Selector="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" Title="Siigo Nube" Url="https://siigonube.siigo.com/#/dashboard/1055" />
+                                                    </uix:NApplicationCard.TargetApp>
+                                                  </uix:NApplicationCard>
+                                                </Sequence>
+                                              </ui:CommentOut.Body>
+                                            </ui:CommentOut>
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </uix:NApplicationCard.Body>
+                                      <uix:NApplicationCard.TargetApp>
+                                        <uix:TargetApp Area="0, 0, 0, 0" Arguments="[cufe]" FilePath="C:\Program Files\Adobe\Acrobat DC\Acrobat\acrobat.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJPSURBVFhH1ZY9aBRBFMevUVCUKIliOPHjEPzIkTRiOAWxSBobLawU7MQ2aBdFBBHkIHiFVjYhcGijyNkIKS5dIHCQSs6rQgq90mZvd7Z5vv9bNu7ODHGyN5xY/Jh9b96895+Zt8uWiOifYjjisdIRZo2hIdhiFvTcNgwHL1yLz45vD1a/UhAEe+fnD4oWH/2KJ/YFkos3pNfIYjh4AYUfP9iT74HBxjrFE/sHnG9zNxGGAwJsCYvgIsJw+BQA/iYiZwBXAdHrV0nDTR6k4HvXGpOSiJCeeK7XyxnAVYCaqVD4fkVERIuPrTFZwjdL2xy7pdfLGcBVQDx1SkZ15RKp+3eMeQN+O5Bbr5czgPMJzNcobNQlKU7CFqPjVUD47i3FJw6QOnfcOm/DqwA0HmJdmjDFqwA0nrp7m9TVaVK35qwxOl4FqDPjcvdhe5Xi8iFS5yelMePyYSmk5rhHvnzKrfEiIHr5TJLL/d+8TqpyLCl48eSfq+BRTma6kls7lAB8eNTpo0nR2SlS12bkGvAm4BSihYeJKBRm0BvqxuVcjsIC5K65MHYWvXiadL6t8TCP3nhwTwTr84UFwBc94cT8wcEzXkE9xoXCAnAC8GPntp25UliAL/5/AdVqVajX6zt2rVajVqtlzNnwIqDf78uY2r1eT0Skvt3wIgAFswLSMQWnkV2TxYsA7LbZbO7YnU5ntCeg2yjebrdHI2BYnAXgJ9KWYBjkx9RRwGd1odwddL9ZExUBuZCTcy/r9XJGCgc2oNYzDVstwzFqrM7RQaXfNljUiwb3UnIAAAAASUVORK5CYII=" InformativeScreenshot="00f984cd9ee313b238127f4ec9875603.png" Selector="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='b89d53433ba3d2d1beb36a3a5ccdab95bf8f18801059dd02b79e46a74a917879*' /&gt;" Title="b89d53433ba3d2d1beb36a3a5ccdab95bf8f18801059dd02b79e46a74a917879799151c5acee42369a59f11967407b7b.pdf - Adobe Acrobat Reader (64-bit)" />
+                                      </uix:NApplicationCard.TargetApp>
+                                    </uix:NApplicationCard>
+                                  </Sequence>
+                                </ui:CommentOut.Body>
+                              </ui:CommentOut>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALbSURBVDhPhdNJT1NRHIbx+wWMswhYECqjOCAO4BAXfgJ37t2amLgxcWkcNsYhGioOkUggKgjK1Jbblpa2dKKlQKlgS1WoIBTE4ISrx/8t1iEsXJztL/e857nKDqeRYlcnJf0vKfO0stPbzC7fE/YEGqkceMy+4CP2hx5wMHyP6iEDh4fvcCRyi2Oj1zkevYZS2Gcmg5QKUp5B/H+QKg0Z1JA6QWoFuc3RyM00ohQ4LKwg3RS7OwR5IchzKrzPViEH/kZGVhAl396LhmzvM1Hg7ELvaqfI3SZXaqHM+5RyXxMV/gZ2B+qpDD6UL7nPob8QRWdzoHfYOT8+imFygtqpGIap19xNjlGXfIUhOcqNqUEuJFycirZTPVj/C7lLjSBKrtWF3u7kWiJB59wsHXMzcqbpTL2nK5XENJ/EsThD5MsC75c/8zw1zonhRkHupRElx+JhmyB5vQ62220UOlTZwySjdlEqm5R7XrDb10rNQBtnY05mfnzFMB1iX+ihbHIfJVv1oSE5VifbbPY0UiCIXpAiQUrc7ZT1twnUQrn3CS1zcQJLM1SHGqgSRMnqGSBH9VPtDlHp8qHr1RCrID3/IKX9rZR6mmmencC/9IGDwSYZtR5ls3mQPEuIntQi1xOT6GxOCu3asDaKnColLhMV/d0c8hs5M+aVK3yjNjkiT9zI3oEGlI3GIXRqGPfHz0x+XxZoAXV+Hkv6pLAtzOFenCf65RPTy99omX3LsWA7Felam1A2dEfIMg9zOvyGi6+TXIpNcjn2jivxN1ydSMiJczE+xrmxIU6GnezySGwSWiZ5ZV3XKzRkvTHMBlOQTWY/W1QPWRYX2VYHuTYbOrtKvsNEoVarS6v1T/LK2s5x0ogxwibTEFvMIbb2BMi2eMm1umWTPjK16lcl34qypiPGChIVZESQ8AqiBuR5/48IECeDrO+OsvE3EhTEn24kE1p+phH5b7TnLXZ38BOlqcjeuqm/RAAAAABJRU5ErkJggg==" InformativeScreenshot="70124232e7747fd7e49c1e31ca532fa7.jpg" Selector="&lt;html app='chrome.exe' title='DIAN | Acceder' /&gt;" Title="DIAN | Acceder" Url="https://catalogo-vpfe.dian.gov.co/User/SearchDocument" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelApplicationCard.Body>
+              </ueab:ExcelApplicationCard>
+            </ueab:SequenceX>
+          </Sequence>
+        </ActivityAction>
+      </ui:RepeatNumberOfTimesX.Body>
+    </ui:RepeatNumberOfTimesX>
+  </Sequence>
+</Activity>

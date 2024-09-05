@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1233,8600" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="977,8600" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -383,7 +383,7 @@
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" CVScreenId="5e5ac8d4-d4a7-4edc-ac0b-bedb9720fd3c" CvElementArea="567, 424, 180, 28" CvType="InputBox" DesignTimeRectangle="567, 426, 114, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-role='combobox' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='INPUT' type='text' class='generic-control-validator dx-texteditor-input' aaname='' /&gt;" Guid="8e955ee2-156f-48ed-9b6b-9e246b9ee664" InformativeScreenshot="2ad0d0a062f6eee627c1d6e83a42c38e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="461, 425, 90, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Fecha de elaboración' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Fecha de elaboración' tag='SPAN' type='' class='col-sm-2 col-form-label span-form-headers' check:innerText='Fecha de elaboración' /&gt;" Guid="795eab18-b7a8-4d6b-84b3-ce4c6135c713" SearchSteps="FuzzySelector" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -401,7 +401,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'JOSE ALEXANDER'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="[TimeSpan.FromSeconds(1).TotalHours]" DisplayName="Clic 'JOSE ALEXANDER'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" CVScreenId="a2e397d5-655c-4862-99df-fae58de6c2db" CvTextArea="573, 517, 173, 13" CvTextArgument="CML PLASTICOS SAS S.A.S." CvType="Text" DesignTimeRectangle="574, 516, 248, 19" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='ng-star-inserted' aaname=' JOSE ALEXANDER VARGAS CARDENAS ' check:innerText='JOSE ALEXANDER VARGAS CARDENAS' /&gt;" Guid="7b074794-f0c6-4836-8e93-9ce4b06385ee" InformativeScreenshot="ba3ed7090d0696958f3eac08f9c0237c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
@@ -415,6 +415,12 @@
                   </uix:VerifyExecutionOptions.Timeout>
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'No. factura'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Text="[Prefijo]" Version="V3">
               <uix:NTypeInto.Target>
@@ -458,11 +464,11 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en '956'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Text="RETAL TRANSPARENTE&#xD;&#xA;SIN PROCESO" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en '956'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="d722f92f-8bfa-4cc8-a168-dd230c176b41" Text="RETAL TRANSPARENTE&#xA;SIN PROCESO" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://siigonube.siigo.com/#/purchase/1020" CVScreenId="5754fb04-6cd2-48d5-9f8b-9787514488ea" CvElementArea="639, 801, 164, 30" CvType="InputBox" DesignTimeRectangle="640, 802, 162, 29" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='editstrLongDescription' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='editstrLongDescription' tag='TEXTAREA' type='' class='form-control' aaname='' /&gt;" Guid="a050764d-917a-4ca8-9cfb-662096ba4341" InformativeScreenshot="103dc5e86c8540f672121b7b3e1806ce.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Siigo Nube' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="5754fb04-6cd2-48d5-9f8b-9787514488ea" CvTextArea="559, 805, 25, 13" CvTextArgument="956" CvType="Text" DesignTimeRectangle="560, 804, 24, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='956' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='956' tag='A' type='' class='' check:innerText='956' /&gt;" Guid="94830099-d8bf-43b8-9a4f-5e53ddb05030" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
