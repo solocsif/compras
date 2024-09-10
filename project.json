@@ -4,7 +4,9 @@
   "description": "Proceso en blanco",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.DocumentUnderstanding.Activities": "[2.11.1-preview]",
     "UiPath.Excel.Activities": "[2.23.5]",
+    "UiPath.IntegrationService.Activities": "[1.7.0]",
     "UiPath.Mail.Activities": "[1.23.1]",
     "UiPath.System.Activities": "[24.10.3]",
     "UiPath.Testing.Activities": "[24.10.0]",
