@@ -1,0 +1,12 @@
+﻿{
+  "Name": "b89d53433ba3d2d1beb36a3a5ccdab95bf8f18801059dd02b79e46a74a917879799151c5acee423",
+  "Type": "App",
+  "Id": "OzM8Sr0BXkOvEDMFtAdTdw",
+  "Reference": "0itd1ZoWLU-hfN2MqNp32A/OzM8Sr0BXkOvEDMFtAdTdw",
+  "Created": "2024-09-19T15:51:13.6361212Z",
+  "Updated": "2024-09-19T15:51:13.6361212Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

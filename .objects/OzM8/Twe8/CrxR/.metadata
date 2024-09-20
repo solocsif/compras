@@ -1,0 +1,13 @@
+﻿{
+  "Name": "b89d53433ba3d2d1beb36a3a5ccdab95bf8f18801059d",
+  "Type": "Screen",
+  "Id": "CrxRPRyMqk-mSpK4fpVT-A",
+  "Reference": "0itd1ZoWLU-hfN2MqNp32A/CrxRPRyMqk-mSpK4fpVT-A",
+  "ParentRef": "0itd1ZoWLU-hfN2MqNp32A/Twe8Vv0AJkycATNQee99Hg",
+  "Created": "2024-09-19T15:51:13.6668532Z",
+  "Updated": "2024-09-19T15:51:13.6668532Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
