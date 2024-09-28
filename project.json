@@ -4,14 +4,18 @@
   "description": "Proceso en blanco",
   "main": "Main.xaml",
   "dependencies": {
+    "Auxiliobits.DatatableToXml.Activities": "[2.0.0]",
+    "InternalLabs.XmlToDataTable.Activities": "[1.0.1]",
     "UiPath.DocumentUnderstanding.Activities": "[2.11.1-preview]",
-    "UiPath.Excel.Activities": "[2.23.5]",
+    "UiPath.Excel.Activities": "[2.24.1]",
     "UiPath.IntegrationService.Activities": "[1.7.0]",
     "UiPath.Mail.Activities": "[1.23.1]",
-    "UiPath.MicrosoftOffice365.Activities": "[2.6.25]",
-    "UiPath.System.Activities": "[24.10.4]",
+    "UiPath.MicrosoftOffice365.Activities": "[2.7.22]",
+    "UiPath.System.Activities": "[24.10.5]",
     "UiPath.Testing.Activities": "[24.10.0]",
-    "UiPath.UIAutomation.Activities": "[24.10.0]"
+    "UiPath.UIAutomation.Activities": "[24.10.3]",
+    "UiPath.WebAPI.Activities": "[1.21.1]",
+    "UiPathTeam.XML.Activities": "[1.1.0]"
   },
   "webServices": [],
   "entitiesStores": [],
