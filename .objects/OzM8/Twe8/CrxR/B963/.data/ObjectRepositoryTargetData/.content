@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="5-Sg7Q3mXkOxKdpi4y0rPw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="KyJcAXAWJ0Ksjpevm0Dt-A" Reference="0itd1ZoWLU-hfN2MqNp32A/B9633pfUW0WmU7kxC1m9KQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="709, 742, 808, 88" DesignTimeScaleFactor="1" ElementType="Table" FullSelectorArgument="&lt;wnd aaname='Panel de documentos' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='table' /&gt;" Guid="726f732d-a40b-4162-9c25-51c33687c8f6" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='7ce08d8983f6736ddd97038ed7d41445b5f58673eebc84611b7a9b47569e2e33*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="d212e16f63667c6bc87a323eae4024f5.png" xmlns="">0tCwE0naulEuf9Fwougy-Sg</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="419, 638, 807, 99" DesignTimeScaleFactor="1" ElementType="Table" FullSelectorArgument="&lt;wnd aaname='Panel de documentos' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl role='table' /&gt;" Guid="b225f788-6433-4819-adaa-1f68f05f108a" ScopeSelectorArgument="&lt;wnd app='acrobat.exe' cls='AcrobatSDIWindow' title='8ed07a5552e5feb82154eed424778e827f68601c67774ffaf13f1dcc9ebc44f2*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="355a55a80996c4f2b483f4d15c39cd0f.png" xmlns="">0MaQ0bpoh_UuU7p0N7e6p6w</imageRef>
     </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractData</x:String>
     <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;
 	&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0' IsDeleted='true'&gt;
 		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
@@ -47,35 +48,35 @@
 		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
 		&lt;Format xsi:type='TextColumnFormat' /&gt;
 	&lt;/Column&gt;
-	&lt;Column xsi:type='DataColumn' ReferenceName='Column-6' ReferenceIdx='6' Name='Column-6' IsDeleted='true'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column-6' ReferenceIdx='6' Name='Column-6'&gt;
 		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
 		&lt;ValidationErrorMessage /&gt;
 		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
 		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
 		&lt;Format xsi:type='TextColumnFormat' /&gt;
 	&lt;/Column&gt;
-	&lt;Column xsi:type='DataColumn' ReferenceName='Column-7' ReferenceIdx='7' Name='Column-7'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='IMPUESTO  S' ReferenceIdx='7' Name='IMPUESTO  S'&gt;
 		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
 		&lt;ValidationErrorMessage /&gt;
 		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
 		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
 		&lt;Format xsi:type='TextColumnFormat' /&gt;
 	&lt;/Column&gt;
-	&lt;Column xsi:type='DataColumn' ReferenceName='IMPUESTO  S' ReferenceIdx='8' Name='IMPUESTO  S'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column-8' ReferenceIdx='8' Name='Column-8'&gt;
 		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
 		&lt;ValidationErrorMessage /&gt;
 		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
 		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
 		&lt;Format xsi:type='TextColumnFormat' /&gt;
 	&lt;/Column&gt;
-	&lt;Column xsi:type='DataColumn' ReferenceName='Column-9' ReferenceIdx='9' Name='Column-9' IsDeleted='true'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Preci  o   unitari  o   d  e   vent  a' ReferenceIdx='9' Name='Preci  o   unitari  o   d  e   vent  a'&gt;
 		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
 		&lt;ValidationErrorMessage /&gt;
 		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
 		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
 		&lt;Format xsi:type='TextColumnFormat' /&gt;
 	&lt;/Column&gt;
-	&lt;Column xsi:type='DataColumn' ReferenceName='Preci  o   unitari  o   d  e   vent  a' ReferenceIdx='10' Name='Preci  o   unitari  o   d  e   vent  a'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column-10' ReferenceIdx='10' Name='Column-10'&gt;
 		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
 		&lt;ValidationErrorMessage /&gt;
 		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
@@ -89,21 +90,14 @@
 		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
 		&lt;Format xsi:type='TextColumnFormat' /&gt;
 	&lt;/Column&gt;
-	&lt;Column xsi:type='DataColumn' ReferenceName='Column-12' ReferenceIdx='12' Name='Column-12' IsDeleted='true'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column-12' ReferenceIdx='12' Name='Column-12'&gt;
 		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
 		&lt;ValidationErrorMessage /&gt;
 		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
 		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
 		&lt;Format xsi:type='TextColumnFormat' /&gt;
 	&lt;/Column&gt;
-	&lt;Column xsi:type='DataColumn' ReferenceName='Column-13' ReferenceIdx='13' Name='Column-13' IsDeleted='true'&gt;
-		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
-		&lt;ValidationErrorMessage /&gt;
-		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
-		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
-		&lt;Format xsi:type='TextColumnFormat' /&gt;
-	&lt;/Column&gt;
-	&lt;Column xsi:type='DataColumn' ReferenceName='Column-14' ReferenceIdx='14' Name='Column-14' IsDeleted='true'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column-13' ReferenceIdx='13' Name='Column-13'&gt;
 		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
 		&lt;ValidationErrorMessage /&gt;
 		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
